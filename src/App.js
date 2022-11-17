@@ -16,7 +16,7 @@ function App() {
 	});
 	return (
 		<UserContext.Provider value={{ users, setUsers }}>
-			{users && <MainPage />}
+			<div className="bg-dark">{users && <MainPage />}</div>
 		</UserContext.Provider>
 	);
 }

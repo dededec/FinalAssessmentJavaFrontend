@@ -5,7 +5,7 @@ import UserContext from "../Context/userContext";
 
 function MainPage() {
 	return (
-		<div>
+		<div className="bg-dark">
 			<Form />
 			<UserDisplay />
 		</div>

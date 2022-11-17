@@ -8,6 +8,15 @@ function UserDisplay() {
 	return (
 		<Card>
 			<div class="container">
+				<div className="row">
+					<span className="col">User ID</span>
+					<span className="col">First Name</span>
+					<span className="col">Second Name</span>
+					<span className="col">Phone</span>
+					<span className="col">Email</span>
+					<span className="col">Actions</span>
+				</div>
+
 				{users.map(user => {
 					return <UserDisplayRow user={user} />;
 				})}

@@ -34,11 +34,6 @@ function UserDisplayRow({ user }) {
 				></input>
 				<input name="email" className="col" defaultValue={user.email}></input>
 
-				{/* <div className="col">{user.id}</div>
-				<div className="col">{user.firstName}</div>
-				<div className="col">{user.lastName}</div>
-				<div className="col">{user.phoneNumber}</div>
-				<div className="col">{user.email}</div> */}
 				<div className="col">
 					<button
 						type="button"
