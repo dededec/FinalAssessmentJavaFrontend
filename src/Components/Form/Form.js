@@ -25,7 +25,7 @@ function Form() {
 					<Input id="inputPhoneNumber" var="phoneNumber" name="Phone number" />
 					<Input id="inputEmail" var="email" name="Email" />
 				</div>
-				<button type="submit" class="btn btn-success">
+				<button type="submit" class="btn btn-success mx-3 mb-3">
 					Add user
 				</button>
 			</form>

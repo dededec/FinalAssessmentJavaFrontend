@@ -29,7 +29,7 @@ const editUsers = async user => {
 		},
 		body: JSON.stringify(user),
 	};
-	const data = await fetch("http://localhost:8080/users");
+	const data = await fetch("http://localhost:8080/users", options);
 	const json = await data.json();
 	return json;
 };
