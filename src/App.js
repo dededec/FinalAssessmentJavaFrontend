@@ -7,6 +7,13 @@ import MainPage from "./Pages/MainPage";
 function App() {
 	const [users, setUsers] = useState();
 
+	useEffect(() => {
+		getAllUsers().then(response => {
+			setUsers(() => {
+				return response;
+			});
+		});
+	});
 	return (
 		<UserContext.Provider value={{ users, setUsers }}>
 			<MainPage />
