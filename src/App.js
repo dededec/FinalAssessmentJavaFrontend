@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { getAllUsers } from "./Api/userFetch";
 import "./App.css";
 import Card from "./Card/Card";
 import UserContext from "./Context/userContext";
@@ -9,8 +10,8 @@ function App() {
 
 	return (
 		<UserContext.Provider value={{ users, setUsers }}>
-			<Form />
-			<Card />
+			{/* <Form />
+			<Card /> */}
 		</UserContext.Provider>
 	);
 }
