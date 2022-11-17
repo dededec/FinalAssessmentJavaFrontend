@@ -5,8 +5,6 @@ import Card from "../Card/Card";
 import Input from "./Input";
 
 function Form() {
-	const { users, setUsers } = useContext(UserContext);
-
 	const handleSubmit = e => {
 		e.preventDefault();
 		const data = Object.fromEntries(new FormData(e.target));
