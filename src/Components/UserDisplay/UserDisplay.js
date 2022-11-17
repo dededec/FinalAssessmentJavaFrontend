@@ -5,16 +5,12 @@ import UserDisplayRow from "./UserDisplayRow";
 
 function UserDisplay() {
 	const { users, setUsers } = useContext(UserContext);
-	useEffect(() => {
-		console.log(users);
-	}, []);
 	return (
 		<Card>
 			<div class="container">
-				<UserDisplayRow />
-				<UserDisplayRow />
-				<UserDisplayRow />
-				<UserDisplayRow />
+				{users.map(user => {
+					return <UserDisplayRow user={user} />;
+				})}
 			</div>
 		</Card>
 	);

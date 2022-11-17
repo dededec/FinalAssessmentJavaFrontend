@@ -16,7 +16,7 @@ function App() {
 	});
 	return (
 		<UserContext.Provider value={{ users, setUsers }}>
-			<MainPage />
+			{users && <MainPage />}
 		</UserContext.Provider>
 	);
 }
